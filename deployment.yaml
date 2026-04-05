@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: eks-nginx
-  name: eks-nginx30
+  name: eks-nginx
 spec:
   replicas: 4
   selector:
@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - image: 018546689865.dkr.ecr.ap-northeast-2.amazonaws.com/k8s-cluster-repo:v3.0
-        name: eks-nginx30
+        name: eks-nginx
